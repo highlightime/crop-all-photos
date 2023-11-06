@@ -28,9 +28,17 @@ subcommand:
 ```
 
 For example, 
-`python3 main.py pptx input_images out.pptx`
-`python3 main.py pdf input_images pdfs_dir`
-`python3 main.py merge pdfs_dir out.pdf`
-`python3 main.py crop input_images cropped_images 0 110 1530 980`
+
+
+```python3 main.py pptx input_images out.pptx```
+
+
+```python3 main.py pdf input_images pdfs_dir```
+
+
+```python3 main.py merge pdfs_dir out.pdf```
+
+
+```python3 main.py crop input_images cropped_images 0 110 1530 980```
 
 
