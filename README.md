@@ -1,4 +1,4 @@
-# crop-all-photos
+# Crop all images and create PDF or PPTX
 
 
 ```
