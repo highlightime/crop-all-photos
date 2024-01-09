@@ -85,6 +85,9 @@ def merge_pdfs(input_dir, output_pdf):
 def images_to_pptx(image_folder, pptx_file):
     # Create a PPTX presentation
     pptx = Presentation()
+    pptx.slide_width = 9144000
+    pptx.slide_height = 5143500
+
 
     # Get image files in the image folder and sort them by name
     image_files = [f for f in os.listdir(image_folder) if f.lower().endswith(('.png', '.jpg', '.jpeg'))]
@@ -93,8 +96,8 @@ def images_to_pptx(image_folder, pptx_file):
     for image_file in image_files:
         slide = pptx.slides.add_slide(pptx.slide_layouts[6])  # 6 is the image slide layout.
         left = top = 0
-        width = Cm(33)
-        height = Cm(19)
+        width = pptx.slide_width
+        height = pptx.slide_height
 
         image_path = os.path.join(image_folder, image_file)
         pic = slide.shapes.add_picture(image_path, left, top, width, height)

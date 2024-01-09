@@ -1,0 +1,3 @@
+python-pptx
+PyPDF2
+Pillow
